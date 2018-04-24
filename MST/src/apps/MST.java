@@ -64,7 +64,7 @@ public class MST {
 		
 		ArrayList<PartialTree.Arc> MST = new ArrayList<PartialTree.Arc>();
 		
-		while(ptlist.size()>0) {
+		while(ptlist.size()>1) {
 		
 		//Remove the first partial tree PTX from L. Let PQX be PTX's priority queue.	
 			
@@ -102,7 +102,7 @@ public class MST {
 		
 			Y.getRoot().parent = X.getRoot();
 			X.merge(Y);
-			Q.merge(Q2);
+			//Q.merge(Q2);
 		
 			ptlist.append(X);
 		}
